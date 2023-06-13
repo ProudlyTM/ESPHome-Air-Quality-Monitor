@@ -1,9 +1,7 @@
-YAML_FILES = esphome-air-quality-monitor-esp32.yaml
-
 .PHONY: build lint requirements
 
 build:
-	esphome compile $(YAML_FILES)
+	esphome compile esphome-air-quality-monitor-esp32.yaml
 
 lint:
 	yamllint .
